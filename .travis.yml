@@ -1,16 +1,9 @@
-dist: xenial
-
 language: node_js
-
-node_js:
-  - "lts/*"
-
-branches:
-  only:
-    - main 
-
-install:
-  - npm install
-
-script:
-  - npm run build
+ node_js:
+ - "stable"
+ cache:
+ directories:
+   - node_modules
+ script:
+ - npm test
+ - npm run build
