@@ -1,7 +1,6 @@
 {
   "name": "thunfisch_website_2.0",
   "version": "0.1.0",
-  "type": "module",
   "private": true,
   "dependencies": {
     "@babel/register": "^7.16.8",
