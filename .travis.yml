@@ -11,4 +11,4 @@ script:
     - npm run build
 
 after_success:
-  - find build/* -type f -exec curl -u $FTP_USER:$FTP_PASS --ftp-create-dirs -T {} sftp://$FTP_URL{} \;
+  - find build/* -type f -exec curl -u $FTP_USER:$FTP_PASS --ftp-create-dirs -T {} sftp://$FTP_URL \;
