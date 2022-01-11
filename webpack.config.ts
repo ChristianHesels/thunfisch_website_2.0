@@ -1,14 +1,12 @@
 import path from 'path';
-// eslint-disable-next-line node/no-unpublished-import
-import {Configuration} from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
-const config: Configuration = {
+module.exports = {
   entry: './src/index.tsx',
   module: {
     rules: [
       {
-        test: /\.(ts|js)x?$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -46,5 +44,3 @@ const config: Configuration = {
     }),
   ],
 };
-
-export default config;
