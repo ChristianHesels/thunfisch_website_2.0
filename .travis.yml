@@ -9,7 +9,11 @@ install:
 script:
     - npm test
     - npm run build
+  
+addons:
+  apt:
+    packages:
+    - sshpass
 
 after_success:
-  - sudo apt-get install sshpass 
-  - find build/* -type f -exec curl -u $FTP_USER:$FTP_PASS --ftp-create-dirs -T {} sftp://$FTP_URL \;
+  - sshpass -p $FTP_PASS scp -r build/* $FTP_USER@$FTP_URL
