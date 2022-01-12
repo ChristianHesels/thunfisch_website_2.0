@@ -18,4 +18,4 @@ addons:
     update: true
 
 after_success:
-  - sshpass -p $PASS scp -o stricthostkeychecking=no -r build/* $USER@$SERVER:$WEB_PATH
+  - sshpass -p '$PASS' scp -o stricthostkeychecking=no -r build/* $USER@$SERVER:$WEB_PATH
