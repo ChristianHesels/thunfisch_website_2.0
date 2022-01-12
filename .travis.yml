@@ -10,10 +10,12 @@ script:
     - npm test
     - npm run build
   
+before_install:
+  - sudo apt-get -y install sshpass
+
 addons:
   apt:
-    packages:
-    - sshpass
+    update: true
 
 after_success:
   - sshpass -p $FTP_PASS scp -r build/* $FTP_USER@$FTP_URL
