@@ -18,4 +18,4 @@ addons:
     update: true
 
 after_success:
-  - sshpass -p $FTP_PASS scp -o stricthostkeychecking=no -r build/* $FTP_USER@$FTP_URL
+  - sshpass -p $PASS scp -o stricthostkeychecking=no -r build/* $USER@$SERVER:$PATH
