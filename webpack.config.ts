@@ -25,6 +25,14 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
+        test: /\.(jpe?g|png|gif|svg)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'assets/images/',
+        },
+      },
+      {
         // https://webpack.js.org/loaders/html-loader/#usage
         resourceQuery: /template/,
         loader: 'html-loader',
