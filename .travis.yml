@@ -17,9 +17,5 @@ addons:
   apt:
     update: true
 
-branches:
-  only:
-  - main
-
 after_success:
-  - sshpass -p $SSH_PASS scp -o stricthostkeychecking=no -r build/* $SSH_USER@$SSH_SERVER:$WEB_PATH
+  - test $TRAVIS_BRANCH = "main" && sshpass -p $SSH_PASS scp -o stricthostkeychecking=no -r build/* $SSH_USER@$SSH_SERVER:$WEB_PATH
