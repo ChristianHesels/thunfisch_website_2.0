@@ -1,6 +1,7 @@
 import React from 'react';
 import {useTTTTStore} from '../../Store';
 import Grid from '@mui/material/Grid';
+import '../../App.css';
 
 export default function Discography() {
   const {getAlbums, getSongs} = useTTTTStore();
@@ -21,7 +22,39 @@ export default function Discography() {
       >
         {getAlbums().map(album => (
           <Grid item key={album.name}>
-            <img src={require('./artworks/' + album.img)} />
+            <div className="container">
+              <img src={require('./artworks/' + album.img)} className="image" />
+              <div className="middle">
+                <div className="text">{album.name}</div>
+              </div>
+              <a href={album.youtube} target="_blank">
+                <span
+                  className="iconify"
+                  data-icon="akar-icons:youtube-fill"
+                  style={{
+                    color: '#FF0000',
+                  }}
+                />
+              </a>
+              <a href={album.spotify} target="_blank">
+                <span
+                  className="iconify"
+                  data-icon="mdi:spotify"
+                  style={{
+                    color: '#1DB954',
+                  }}
+                />
+              </a>
+              <a href={album.apple} target="_blank">
+                <span
+                  className="iconify"
+                  data-icon="cib:apple-music"
+                  style={{
+                    color: '#f94c57',
+                  }}
+                />
+              </a>
+            </div>
           </Grid>
         ))}
       </Grid>
@@ -39,7 +72,42 @@ export default function Discography() {
         {getSongs().map(song => {
           return song.wasSingle ? (
             <Grid item key={song.name}>
-              <img src={require('./artworks/' + song.img)} />
+              <div className="container">
+                <img
+                  src={require('./artworks/' + song.img)}
+                  className="image"
+                />
+                <div className="middle">
+                  <div className="text">{song.name}</div>
+                </div>
+                <a href={song.youtube} target="_blank">
+                  <span
+                    className="iconify"
+                    data-icon="akar-icons:youtube-fill"
+                    style={{
+                      color: '#FF0000',
+                    }}
+                  />
+                </a>
+                <a href={song.spotify} target="_blank">
+                  <span
+                    className="iconify"
+                    data-icon="mdi:spotify"
+                    style={{
+                      color: '#1DB954',
+                    }}
+                  />
+                </a>
+                <a href={song.apple} target="_blank">
+                  <span
+                    className="iconify"
+                    data-icon="cib:apple-music"
+                    style={{
+                      color: '#f94c57',
+                    }}
+                  />
+                </a>
+              </div>
             </Grid>
           ) : (
             ''

@@ -36,7 +36,7 @@ export default function TTTT() {
       color: 'white',
     },
     b3: {
-      backgroundColor: '#717171',
+      backgroundColor: 'black',
       textAlign: 'center',
       padding: 2,
       backgroundRepeat: 'no-repeat',
