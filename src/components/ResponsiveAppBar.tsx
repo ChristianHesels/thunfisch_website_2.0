@@ -3,13 +3,10 @@ import {styled} from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MuiAppBar, {AppBarProps as MuiAppBarProps} from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
 import CssBaseline from '@mui/material/CssBaseline';
 import Typography from '@mui/material/Typography';
 import Logo from './TTTT/logo.png';
 import IconButton from '@mui/material/IconButton';
-import AccountCircle from '@mui/icons-material/AccountCircle';
 import {Link} from 'react-router-dom';
 import {Tabs, Tab} from '@mui/material';
 import '../App.css';
@@ -39,16 +36,10 @@ const AppBar = styled(MuiAppBar, {
 }));
 
 export default function ResponsiveAppBar() {
-  const [userMenuAnchorEl, setuserMenuAnchorEl] =
-    React.useState<null | HTMLElement>(null);
-
   const [tabSelectionValue, setTabSelectionValue] = React.useState(0);
 
   const handleUserMenu = (event: React.MouseEvent<HTMLElement>) => {
     setuserMenuAnchorEl(event.currentTarget);
-  };
-  const handleUserMenuClose = () => {
-    setuserMenuAnchorEl(null);
   };
 
   const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
