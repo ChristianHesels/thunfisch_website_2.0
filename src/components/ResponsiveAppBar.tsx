@@ -106,9 +106,6 @@ export default function ResponsiveAppBar() {
 
           <Box sx={{flexGrow: 1}} />
 
-          {/*
-            User menu on the right side
-          */}
           <div>
             <IconButton
               size="large"
@@ -117,34 +114,7 @@ export default function ResponsiveAppBar() {
               aria-haspopup="true"
               onClick={handleUserMenu}
               color="inherit"
-            >
-              <AccountCircle />
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={userMenuAnchorEl}
-              anchorOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'right',
-              }}
-              open={Boolean(userMenuAnchorEl)}
-              onClose={handleUserMenuClose}
-            >
-              <MenuItem onClick={handleUserMenuClose}>
-                <Link to="/profile">Profile</Link>
-              </MenuItem>
-              <MenuItem onClick={handleUserMenuClose}>
-                <Link to="/projects">Projects</Link>
-              </MenuItem>
-              <MenuItem onClick={handleUserMenuClose}>
-                <Link to="/logout">Logout</Link>
-              </MenuItem>
-            </Menu>
+            ></IconButton>
           </div>
         </Toolbar>
       </AppBar>

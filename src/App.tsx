@@ -1,5 +1,6 @@
 import React from 'react';
 import TTTT from './components/TTTT';
+import Schranz from './components/Schranz';
 import './App.css';
 import ResponsiveAppBar from './components/ResponsiveAppBar';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
@@ -16,14 +17,16 @@ function App() {
       fontSize: '2rem',
     },
   };
+
   return (
     <div className="App">
       <Router>
         <ThemeProvider theme={theme}>
           <ResponsiveAppBar />
           <Routes>
-            <Route path="/" element={<div>test</div>} />
+            <Route path="/" element={<TTTT />} />
             <Route path="/tttt" element={<TTTT />} />
+            <Route path="/schranz" element={<Schranz />} />
           </Routes>
         </ThemeProvider>
       </Router>

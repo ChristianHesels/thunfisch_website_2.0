@@ -107,3 +107,7 @@
 .container:hover .middle {
   opacity: 1;
 }
+
+.soon {
+  color: black;
+}
