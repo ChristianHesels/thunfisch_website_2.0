@@ -1,15 +1,19 @@
 import React from 'react';
-import logo from './logo.png';
+import TTTT from './components/TTTT';
 import './App.css';
+import ResponsiveAppBar from './components/ResponsiveAppBar';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Seite wird momentan bearbeitet!</p>
-        <p>Ein Travis-CI Test</p>
-      </header>
+      <Router>
+        <ResponsiveAppBar />
+        <Routes>
+          <Route path="/" element={<div>test</div>} />
+          <Route path="/tttt" element={<TTTT />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
