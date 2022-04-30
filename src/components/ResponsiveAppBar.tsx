@@ -38,10 +38,6 @@ const AppBar = styled(MuiAppBar, {
 export default function ResponsiveAppBar() {
   const [tabSelectionValue, setTabSelectionValue] = React.useState(0);
 
-  const handleUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setuserMenuAnchorEl(event.currentTarget);
-  };
-
   const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
     setTabSelectionValue(newValue);
   };
@@ -103,7 +99,6 @@ export default function ResponsiveAppBar() {
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
-              onClick={handleUserMenu}
               color="inherit"
             ></IconButton>
           </div>
