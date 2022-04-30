@@ -7,6 +7,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import CssBaseline from '@mui/material/CssBaseline';
 import Typography from '@mui/material/Typography';
+import Logo from './TTTT/logo.png';
 import IconButton from '@mui/material/IconButton';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import {Link} from 'react-router-dom';
@@ -59,7 +60,15 @@ export default function ResponsiveAppBar() {
       <AppBar sx={{bgcolor: 'black'}} position="fixed" data-testid="app-bar">
         <Toolbar>
           <Typography variant="h6" noWrap component="div" sx={{flexGrow: 1}}>
-            Thunfisch Records
+            <Box
+              component="img"
+              sx={{
+                height: 50,
+                paddingTop: 1,
+              }}
+              alt="TTTT Logo"
+              src={Logo}
+            />
           </Typography>
           {/*
             Tabs for switching the views

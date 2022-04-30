@@ -8,6 +8,7 @@ import {makeStyles} from '@mui/styles';
 import band from './TTTT/band.jpg';
 import bandsmall from './TTTT/bandsmall.jpg';
 import YouTube from './TTTT/YouTube';
+import Discography from './TTTT/Discography';
 import useWindowSize from './Hooks/WindowsSize';
 
 export default function TTTT() {
@@ -34,6 +35,13 @@ export default function TTTT() {
       backgroundRepeat: 'no-repeat',
       color: 'white',
     },
+    b3: {
+      backgroundColor: '#717171',
+      textAlign: 'center',
+      padding: 2,
+      backgroundRepeat: 'no-repeat',
+      color: 'white',
+    },
   });
 
   const classes = useStyles();
@@ -46,6 +54,9 @@ export default function TTTT() {
           </Paper>
           <Paper className={classes.b2}>
             <YouTube />
+          </Paper>
+          <Paper className={classes.b3}>
+            <Discography />
           </Paper>
         </Stack>
       </Box>

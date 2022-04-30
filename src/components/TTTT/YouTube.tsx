@@ -4,7 +4,9 @@ export default function YouTube() {
   return (
     <div>
       <h1>
-        <h2>HYPA HYPA! </h2>
+        <big>HYPA HYPA! </big>
+        <br />
+        <br />
         <big>Electric Callboy</big> Cover der <big>Thunfische</big>:
       </h1>
       "HOL DEN SCHNAPS RAUS! HEUTE SAUF ICH MIR EIN'!"
