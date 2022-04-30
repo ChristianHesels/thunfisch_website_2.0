@@ -3,7 +3,10 @@ import React from 'react';
 export default function YouTube() {
   return (
     <div>
-      <h1>HYPA HYPA! Electric Callboy Cover der Thunfische:</h1>
+      <h1>
+        <h2>HYPA HYPA! </h2>
+        <big>Electric Callboy</big> Cover der <big>Thunfische</big>:
+      </h1>
       "HOL DEN SCHNAPS RAUS! HEUTE SAUF ICH MIR EIN'!"
       <div className="video">
         <iframe
