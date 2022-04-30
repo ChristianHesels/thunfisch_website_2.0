@@ -10,7 +10,7 @@ export default function Preview() {
         <Paper
           style={{backgroundColor: 'rgba(100, 100, 100, .70)', color: 'white'}}
         >
-          PROMILLEPUNK AUS DER HAUPTSTADT
+          PROMILLEPUNK AUS DER HAUPTSTADT!
         </Paper>
       </Typography>
     </div>
