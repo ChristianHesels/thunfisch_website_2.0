@@ -23,7 +23,10 @@ export default function Discography() {
         {getAlbums().map(album => (
           <Grid item key={album.name}>
             <div className="container">
-              <img src={require('./artworks/' + album.img)} className="image" />
+              <img
+                src={require('./artworks/' + album.img + '.jpg')}
+                className="image"
+              />
               <div className="middle">
                 <div className="text">{album.name}</div>
               </div>
@@ -74,7 +77,7 @@ export default function Discography() {
             <Grid item key={song.name}>
               <div className="container">
                 <img
-                  src={require('./artworks/' + song.img)}
+                  src={require('./artworks/' + song.img + '.jpg')}
                   className="image"
                 />
                 <div className="middle">

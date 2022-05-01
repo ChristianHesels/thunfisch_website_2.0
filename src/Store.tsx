@@ -31,7 +31,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
   songs: [
     {
       name: 'Cuba Libre',
-      img: '300x300 einkaufsliste.jpg',
+      img: '300x300 einkaufsliste',
       youtube: 'https://youtu.be/XOdGNjBscTs',
       spotify:
         'https://open.spotify.com/track/6jiRKBEnavihJt2qPCxafa?si=cca00c0d3c1b4cf0',
@@ -41,7 +41,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Berliner Luft',
-      img: '300x300 einkaufsliste.jpg',
+      img: '300x300 einkaufsliste',
       youtube: 'https://youtu.be/a2jPh4NP_Ok',
       spotify:
         'https://open.spotify.com/track/0JmIt8eTooLUO9JEoH6LSX?si=fda8ee3eaa68488a',
@@ -51,7 +51,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Bier',
-      img: '300x300 einkaufsliste.jpg',
+      img: '300x300 einkaufsliste',
       youtube: 'https://youtu.be/RKAJgzcTUNA',
       spotify:
         'https://open.spotify.com/track/311BULdYhv9lKKRp1j1gEv?si=94d851598fb342e1',
@@ -60,7 +60,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Jägermeister',
-      img: '300x300 einkaufsliste.jpg',
+      img: '300x300 einkaufsliste',
       youtube: 'https://youtu.be/TzOMPiJ51hg',
       spotify:
         'https://open.spotify.com/track/3H4jKISqMiHqElOyL1R5le?si=6cc3aa7e8cf84fca',
@@ -70,7 +70,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Intro',
-      img: '300x300 ggt.jpg',
+      img: '300x300 ggt',
       youtube: 'https://youtu.be/tb5UKatkGvg',
       spotify:
         'https://open.spotify.com/track/0DYizweR53yTseHfeIVBdI?si=d354ff23d31c4add',
@@ -79,7 +79,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'TTTT',
-      img: '300x300 tttt.jpg',
+      img: '300x300 tttt',
       youtube: 'https://www.youtube.com/watch?v=w9UWL5X-9U0',
       spotify:
         'https://open.spotify.com/track/26WFXCU57fHk2iapf1XtM8?si=0a57f99d44404975',
@@ -88,7 +88,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Sucht',
-      img: '300x300 ggt.jpg',
+      img: '300x300 ggt',
       youtube: 'https://youtu.be/cMppwKtAoNk',
       spotify:
         'https://open.spotify.com/track/0oyiMRqraxxaVYVFDWxAGH?si=c3e13087393e4501',
@@ -97,7 +97,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Gehirnreduktion',
-      img: '300x300 ggt.jpg',
+      img: '300x300 ggt',
       youtube: 'https://youtu.be/f41bo5MC8O0',
       spotify:
         'https://open.spotify.com/track/6Z8Ny6lLNlkR6SvkKvYC2l?si=377218a0280845a1',
@@ -107,7 +107,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Fragwürdig',
-      img: '300x300 ggt.jpg',
+      img: '300x300 ggt',
       youtube: 'https://youtu.be/FEL8PaY2Chw',
       spotify:
         'https://open.spotify.com/track/39F2wFQGWjv8ynasIKTl3d?si=7dda93ac3c994b77',
@@ -117,7 +117,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Der Trichter',
-      img: '300x300 ggt.jpg',
+      img: '300x300 ggt',
       youtube: 'https://youtu.be/e7qAxH-mS3Q',
       spotify:
         'https://open.spotify.com/track/1TxEvhpDm5t7rtUUcfSw3z?si=f6299c5408ce4c3d',
@@ -127,7 +127,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Der Tag danach',
-      img: '300x300 ggt.jpg',
+      img: '300x300 ggt',
       youtube: 'https://youtu.be/-thJrHcHzQA',
       spotify:
         'https://open.spotify.com/track/34eEWgEKKNKppeRH6AAUsg?si=879f0bbcb8e14e14',
@@ -137,7 +137,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Ein Weihnachtshit',
-      img: '300x300 weihnachtshit.jpg',
+      img: '300x300 weihnachtshit',
       spotify:
         'https://open.spotify.com/track/5bA684QGm6Nare0yRmoTFh?si=7ca25ee10dd74b24',
       apple:
@@ -146,7 +146,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Sambuca',
-      img: '300x300 sambuca.jpg',
+      img: '300x300 sambuca',
       youtube: 'https://youtu.be/RMx0mraSaiQ',
       spotify:
         'https://open.spotify.com/track/4cce0RxkPU61u2mHdvEohj?si=5f39ab5868734f04',
@@ -155,7 +155,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Verliebt',
-      img: '300x300 verliebt.jpg',
+      img: '300x300 verliebt',
       youtube: 'https://www.youtube.com/watch?v=oWCl20JPJHw',
       spotify:
         'https://open.spotify.com/track/3exFq71M313jEvWUiCmr7U?si=4051b6713fcc43f6',
@@ -164,7 +164,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Pommes',
-      img: '300x300 pommes.jpg',
+      img: '300x300 pommes',
       youtube: 'https://www.youtube.com/watch?v=1lD4os7sNlY',
       spotify:
         'https://open.spotify.com/track/6ZrRLnM6aAUzA58ML326Yt?si=488aa6f4f5b2487e',
@@ -173,7 +173,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Kein Sauflied',
-      img: '300x300 ks.jpg',
+      img: '300x300 ks',
       youtube: 'https://www.youtube.com/watch?v=6Ox9k8dyXVg',
       spotify:
         'https://open.spotify.com/track/5Q5vYUSL0vsL3nOvlGxe3S?si=43f7bf1c8b4d4a94',
@@ -182,7 +182,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: '30',
-      img: '300x300 30.jpg',
+      img: '300x300 30',
       spotify:
         'https://open.spotify.com/track/0Gbxx71pbd5C8CFaF7juZF?si=1e56e253fd744259',
       apple: 'https://music.apple.com/de/album/30-single/1532586085',
@@ -190,7 +190,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Arbeit Scheiße, Saufen Geil!',
-      img: '300x300 assg.jpg',
+      img: '300x300 assg',
       spotify:
         'https://open.spotify.com/track/7ADBNkMJNUT2jdmflvRFUh?si=e87035541e1640f3',
       apple:
@@ -199,7 +199,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Fick Dich 2020',
-      img: '300x300 fd2020.jpg',
+      img: '300x300 fd2020',
       youtube: 'https://www.youtube.com/watch?v=Dxe1oLPpysk',
       spotify:
         'https://open.spotify.com/track/1kIbcMxi1rpGxxmynAX4z5?si=64962a3fdb5a4008',
@@ -208,7 +208,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Omasaufen',
-      img: '300x300 omasaufen.jpg',
+      img: '300x300 omasaufen',
       youtube: 'https://www.youtube.com/watch?v=deFZHWHYz6Q',
       spotify:
         'https://open.spotify.com/track/6ykJC9iGTvRRTjbwkUAh0t?si=bd5d5c9053c5447e',
@@ -217,7 +217,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
     },
     {
       name: 'Keiner für alle',
-      img: '300x300 kfa.jpg',
+      img: '300x300 kfa',
       youtube: 'https://www.youtube.com/watch?v=7jbxUprY0sc',
       spotify:
         'https://open.spotify.com/track/2X1DI2GRL3pSnC3ElWoLem?si=85ade2c4ac8246b6',
@@ -231,7 +231,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
       name: 'Einkaufsliste',
       songs: ['Cuba Libre', 'Berliner Luft', 'Bier', 'Jägermeister'],
       release: '06.05.2019',
-      img: '300x300 einkaufsliste.jpg',
+      img: '300x300 einkaufsliste',
       youtube:
         'https://youtube.com/playlist?list=OLAK5uy_lALULKTsQDK0QXH4CyOAfCEhkcUTkmU0E',
       spotify:
@@ -242,7 +242,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
       name: 'Ganz gewöhnliche Thunfische',
       songs: ['Cuba Libre', 'Berliner Luft', 'Bier', 'Jägermeister'],
       release: '06.05.2019',
-      img: '300x300 ggt.jpg',
+      img: '300x300 ggt',
       youtube:
         'https://youtube.com/playlist?list=OLAK5uy_lALULKTsQDK0QXH4CyOAfCEhkcUTkmU0E',
       spotify:
@@ -254,7 +254,7 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
       name: 'Bierpferd',
       songs: ['Cuba Libre', 'Berliner Luft', 'Bier', 'Jägermeister'],
       release: '06.05.2019',
-      img: '300x300 bierpferd.jpg',
+      img: '300x300 bierpferd',
       youtube:
         'https://youtube.com/playlist?list=OLAK5uy_lALULKTsQDK0QXH4CyOAfCEhkcUTkmU0E',
       spotify:
