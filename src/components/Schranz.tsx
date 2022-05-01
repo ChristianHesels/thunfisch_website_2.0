@@ -1,5 +1,7 @@
 import React from 'react';
 import Preview from './Schranz/Preview';
+import Teaser from './Schranz/Teaser';
+import Discography from './Schranz/Discography';
 import Box from '@mui/material/Box';
 import '../App.css';
 import Paper from '@mui/material/Paper';
@@ -21,7 +23,7 @@ export default function Schranz() {
       color: 'white',
     },
     b2: {
-      backgroundColor: '#a4e7ff',
+      backgroundColor: '#262524',
       textAlign: 'center',
       padding: 2,
       backgroundRepeat: 'no-repeat',
@@ -43,6 +45,12 @@ export default function Schranz() {
         <Stack spacing={2}>
           <Paper className={classes.b1}>
             <Preview />
+          </Paper>
+          <Paper className={classes.b2}>
+            <Teaser />
+          </Paper>
+          <Paper className={classes.b3}>
+            <Discography />
           </Paper>
         </Stack>
       </Box>

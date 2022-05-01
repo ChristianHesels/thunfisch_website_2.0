@@ -20,14 +20,14 @@ interface Album {
   apple: string;
 }
 
-interface TTTTStore {
+interface MusicStore {
   albums: Album[];
   songs: Song[];
   getAlbums: () => Album[];
   getSongs: () => Song[];
 }
 
-export const useTTTTStore = create<TTTTStore>((set, get) => ({
+export const useTTTTStore = create<MusicStore>((set, get) => ({
   songs: [
     {
       name: 'Cuba Libre',
@@ -260,6 +260,57 @@ export const useTTTTStore = create<TTTTStore>((set, get) => ({
       spotify:
         'https://open.spotify.com/album/2dSIkpOenY8vpE2upKGpd4?si=Rlsuk7P5QSmnHUmnRGlEhQ',
       apple: '',
+    },
+  ],
+  getAlbums: () => {
+    return get().albums;
+  },
+  getSongs: () => {
+    return get().songs;
+  },
+}));
+
+export const useSchranzStore = create<MusicStore>((set, get) => ({
+  songs: [
+    {
+      name: 'dawai dawai wipiwei',
+      img: '300x300 ddw',
+      youtube: 'https://youtu.be/XOdGNjBscTs',
+      spotify:
+        'https://open.spotify.com/track/6jiRKBEnavihJt2qPCxafa?si=cca00c0d3c1b4cf0',
+      apple:
+        'https://music.apple.com/de/album/cuba-libre/1462804508?i=1462804513',
+      wasSingle: true,
+    },
+    {
+      name: 'stereosaufen',
+      img: '300x300 stereosaufen',
+      youtube: 'https://youtu.be/XOdGNjBscTs',
+      spotify:
+        'https://open.spotify.com/track/6jiRKBEnavihJt2qPCxafa?si=cca00c0d3c1b4cf0',
+      apple:
+        'https://music.apple.com/de/album/cuba-libre/1462804508?i=1462804513',
+      wasSingle: true,
+    },
+  ],
+  albums: [
+    {
+      name: '...oder gar nicht',
+      songs: [
+        'fa.ko',
+        'stereosaufen',
+        'clubschlange',
+        'dawai dawai wipiwei',
+        'sangria',
+        'was machst du?',
+      ],
+      release: '03.06.2022',
+      img: '300x300 ogn',
+      youtube:
+        'https://youtube.com/playlist?list=OLAK5uy_lALULKTsQDK0QXH4CyOAfCEhkcUTkmU0E',
+      spotify:
+        'https://open.spotify.com/album/2dSIkpOenY8vpE2upKGpd4?si=Rlsuk7P5QSmnHUmnRGlEhQ',
+      apple: 'https://music.apple.com/de/album/einkaufsliste-ep/1462804508',
     },
   ],
   getAlbums: () => {

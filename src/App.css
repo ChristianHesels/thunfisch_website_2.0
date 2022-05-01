@@ -101,7 +101,21 @@
 }
 
 .container:hover .image {
-  opacity: 0.3;
+  opacity: 0.6;
+}
+
+.frontImage:hover {
+  animation: blendin 0.4s ease-in-out both;
+  transition: opacity 1s ease-ut-out;
+}
+
+@keyframes blendin {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1.0;
+  }
 }
 
 .container:hover .middle {
