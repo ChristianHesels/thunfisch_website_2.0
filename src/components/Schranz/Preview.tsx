@@ -12,7 +12,6 @@ export default function Preview() {
         >
           SCHRANZ ODER GAR NICHT
         </Paper>
-        <div className="soon">Coming soon..</div>
       </Typography>
     </div>
   );

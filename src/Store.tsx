@@ -1,4 +1,10 @@
 import create from 'zustand';
+import {persist} from 'zustand/middleware';
+
+interface PageStatus {
+  value: number;
+  setValue: (value: number) => void;
+}
 
 interface Song {
   name: string;
@@ -15,9 +21,9 @@ interface Album {
   songs: string[];
   release: string;
   img: string;
-  youtube: string;
-  spotify: string;
-  apple: string;
+  youtube?: string;
+  spotify?: string;
+  apple?: string;
 }
 
 interface MusicStore {
@@ -275,21 +281,19 @@ export const useSchranzStore = create<MusicStore>((set, get) => ({
     {
       name: 'dawai dawai wipiwei',
       img: '300x300 ddw',
-      youtube: 'https://youtu.be/XOdGNjBscTs',
       spotify:
-        'https://open.spotify.com/track/6jiRKBEnavihJt2qPCxafa?si=cca00c0d3c1b4cf0',
+        'https://open.spotify.com/track/4c9ayAtiOihRkhmPahn7Co?si=f1564d909a48481f',
       apple:
-        'https://music.apple.com/de/album/cuba-libre/1462804508?i=1462804513',
+        'https://music.apple.com/us/album/dawai-dawai-wipiwei-single/1617680942',
       wasSingle: true,
     },
     {
       name: 'stereosaufen',
       img: '300x300 stereosaufen',
-      youtube: 'https://youtu.be/XOdGNjBscTs',
       spotify:
-        'https://open.spotify.com/track/6jiRKBEnavihJt2qPCxafa?si=cca00c0d3c1b4cf0',
+        'https://open.spotify.com/track/3Zlsa2fPNIezVIyGxJQT00?si=6b5d9e31a530457d',
       apple:
-        'https://music.apple.com/de/album/cuba-libre/1462804508?i=1462804513',
+        'https://music.apple.com/us/album/stereosaufen-feat-das-m-single/1613191245',
       wasSingle: true,
     },
   ],
@@ -306,11 +310,6 @@ export const useSchranzStore = create<MusicStore>((set, get) => ({
       ],
       release: '03.06.2022',
       img: '300x300 ogn',
-      youtube:
-        'https://youtube.com/playlist?list=OLAK5uy_lALULKTsQDK0QXH4CyOAfCEhkcUTkmU0E',
-      spotify:
-        'https://open.spotify.com/album/2dSIkpOenY8vpE2upKGpd4?si=Rlsuk7P5QSmnHUmnRGlEhQ',
-      apple: 'https://music.apple.com/de/album/einkaufsliste-ep/1462804508',
     },
   ],
   getAlbums: () => {
@@ -318,5 +317,12 @@ export const useSchranzStore = create<MusicStore>((set, get) => ({
   },
   getSongs: () => {
     return get().songs;
+  },
+}));
+
+export const usePageStore = create<PageStatus>(set => ({
+  value: 0,
+  setValue: value => {
+    set({value: value});
   },
 }));

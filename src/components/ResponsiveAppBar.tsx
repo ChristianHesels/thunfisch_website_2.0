@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import MuiAppBar, {AppBarProps as MuiAppBarProps} from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import CssBaseline from '@mui/material/CssBaseline';
+import {usePageStore} from '../Store';
 import Typography from '@mui/material/Typography';
 import Logo from './TTTT/logo.png';
 import IconButton from '@mui/material/IconButton';
@@ -36,10 +37,9 @@ const AppBar = styled(MuiAppBar, {
 }));
 
 export default function ResponsiveAppBar() {
-  const [tabSelectionValue, setTabSelectionValue] = React.useState(0);
-
+  const {value, setValue} = usePageStore();
   const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
-    setTabSelectionValue(newValue);
+    setValue(newValue);
   };
   return (
     <Box sx={{display: 'flex'}}>
@@ -62,7 +62,7 @@ export default function ResponsiveAppBar() {
           */}
           <Box sx={{flexGrow: 1}}>
             <Tabs
-              value={tabSelectionValue}
+              value={value}
               onChange={handleTabChange}
               aria-label="view selection"
               textColor="inherit"
