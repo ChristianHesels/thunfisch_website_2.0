@@ -22,9 +22,9 @@ function App() {
 
   return (
     <div>
-      <div className="App">
-        <Router>
-          <ThemeProvider theme={theme}>
+      <Router>
+        <ThemeProvider theme={theme}>
+          <div className="App">
             <ResponsiveAppBar />
             <Routes>
               <Route path="/" element={<TTTT />} />
@@ -32,10 +32,10 @@ function App() {
               <Route path="/schranz" element={<Schranz />} />
               <Route path="/impressum" element={<Impressum />} />
             </Routes>
-          </ThemeProvider>
-        </Router>
-      </div>
-      <Footer />
+          </div>
+        </ThemeProvider>
+        <Footer />
+      </Router>
     </div>
   );
 }

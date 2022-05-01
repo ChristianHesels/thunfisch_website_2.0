@@ -9,6 +9,14 @@
   color: white;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
 .App-logo {
   height: 20vmin;
   pointer-events: none;
