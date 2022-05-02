@@ -13,7 +13,7 @@ import useWindowSize from './Hooks/WindowsSize';
 
 export default function TTTT() {
   const size = useWindowSize();
-  let imageUrl = band;
+  let imageUrl = '';
   if (size.width) {
     imageUrl = size.width >= 650 ? band : bandsmall;
   }

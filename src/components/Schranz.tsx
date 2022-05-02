@@ -7,13 +7,19 @@ import '../App.css';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import {makeStyles} from '@mui/styles';
-import band from './Schranz/schranz.jpg';
+import ich from './Schranz/ich.jpg';
+import ich_mobile from './Schranz/ich_mobile.jpg';
+import useWindowSize from './Hooks/WindowsSize';
 
 export default function Schranz() {
-  const imageUrl = band;
+  const size = useWindowSize();
+  let imageUrl = '';
+  if (size.width) {
+    imageUrl = size.width >= 650 ? ich : ich_mobile;
+  }
   const useStyles = makeStyles({
     b1: {
-      backgroundColor: '#a4e7ff',
+      backgroundColor: '#ffffff',
       textAlign: 'center',
       padding: 2,
       backgroundImage: `url(${imageUrl})`,
