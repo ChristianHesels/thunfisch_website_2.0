@@ -39,7 +39,7 @@ export default function Teaser() {
             className="frontImage"
             onMouseOver={e => (e.currentTarget.src = GogBack)}
             onMouseOut={e => (e.currentTarget.src = GogFront)}
-            style={{opacity: opacity}}
+            style={{opacity: opacity, width: '100%', height: 'auto'}}
           />
         </Grid>
         <Grid item key="text">
