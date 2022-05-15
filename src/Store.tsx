@@ -279,6 +279,15 @@ export const useTTTTStore = create<MusicStore>((set, get) => ({
 export const useSchranzStore = create<MusicStore>((set, get) => ({
   songs: [
     {
+      name: 'clubschlange',
+      img: '300x300 clubschlange',
+      spotify:
+        'https://open.spotify.com/track/50TxwMhKA7qSldNdtlYdjA?si=e4cc9d7434024a7e',
+      apple:
+        'https://music.apple.com/de/album/clubschlange-feat-diepk/1621956814?i=1621956815',
+      wasSingle: true,
+    },
+    {
       name: 'dawai dawai wipiwei',
       img: '300x300 ddw',
       spotify:
