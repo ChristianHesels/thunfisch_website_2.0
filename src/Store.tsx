@@ -319,6 +319,9 @@ export const useSchranzStore = create<MusicStore>((set, get) => ({
       ],
       release: '03.06.2022',
       img: '300x300 ogn',
+      spotify:
+        'https://open.spotify.com/album/7ltoU6bOAJ6hUgn64AkL5n?si=VfT2M85vTHG2D6SIgNWRfA',
+      apple: 'https://music.apple.com/de/album/oder-gar-nicht-ep/1621847445',
     },
   ],
   getAlbums: () => {

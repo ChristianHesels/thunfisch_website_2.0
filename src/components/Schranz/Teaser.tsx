@@ -22,7 +22,7 @@ export default function Teaser() {
 
   return (
     <div>
-      <h1 style={{opacity: opacity}}>COMING SOON</h1>
+      <h1 style={{opacity: opacity}}>OUT NOW</h1>
       <Grid
         container
         sx={{
@@ -34,19 +34,24 @@ export default function Teaser() {
         columns={{xs: 2, sm: 2, md: 2}}
       >
         <Grid item key="image" className="frontImage">
-          <img
-            src={GogFront}
-            className="frontImage"
-            onMouseOver={e => (e.currentTarget.src = GogBack)}
-            onMouseOut={e => (e.currentTarget.src = GogFront)}
-            style={{opacity: opacity, width: '100%', height: 'auto'}}
-          />
+          <a
+            href="https://open.spotify.com/album/7ltoU6bOAJ6hUgn64AkL5n?si=VfT2M85vTHG2D6SIgNWRfA"
+            target="_blank"
+          >
+            <img
+              src={GogFront}
+              className="frontImage"
+              onMouseOver={e => (e.currentTarget.src = GogBack)}
+              onMouseOut={e => (e.currentTarget.src = GogFront)}
+              style={{opacity: opacity, width: '100%', height: 'auto'}}
+            />
+          </a>
         </Grid>
         <Grid item key="text">
           <h2>
             Die <big>Debüt-EP</big>
           </h2>
-          <p>"...oder gar nicht"</p> erscheint am<big> 03.06.2022 </big>
+          <p>"...oder gar nicht"</p>
         </Grid>
       </Grid>
       <br /> <br />
