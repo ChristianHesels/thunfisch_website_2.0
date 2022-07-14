@@ -265,7 +265,7 @@ export const useTTTTStore = create<MusicStore>((set, get) => ({
         'https://youtube.com/playlist?list=OLAK5uy_lALULKTsQDK0QXH4CyOAfCEhkcUTkmU0E',
       spotify:
         'https://open.spotify.com/album/2dSIkpOenY8vpE2upKGpd4?si=Rlsuk7P5QSmnHUmnRGlEhQ',
-      apple: '',
+      apple: 'https://music.apple.com/de/album/bierpferd/1504565678',
     },
   ],
   getAlbums: () => {
