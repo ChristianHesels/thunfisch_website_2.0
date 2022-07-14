@@ -1,5 +1,4 @@
 import create from 'zustand';
-import {persist} from 'zustand/middleware';
 
 interface PageStatus {
   value: number;
@@ -278,6 +277,15 @@ export const useTTTTStore = create<MusicStore>((set, get) => ({
 
 export const useSchranzStore = create<MusicStore>((set, get) => ({
   songs: [
+    {
+      name: 'außer scheiße',
+      img: '300x300 as',
+      spotify:
+        'https://open.spotify.com/track/1obDkTTSrX68Qb0xAiakwm?si=e3efb6010a3847bd',
+      apple:
+        'https://music.apple.com/de/album/au%C3%9Fer-schei%C3%9Fe-feat-diepk-jan-eurysma-single/1628383745',
+      wasSingle: true,
+    },
     {
       name: 'clubschlange',
       img: '300x300 clubschlange',
