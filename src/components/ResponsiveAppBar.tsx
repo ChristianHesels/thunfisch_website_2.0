@@ -1,4 +1,5 @@
 import * as React from 'react';
+import {useEffect} from 'react';
 import {styled} from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MuiAppBar, {AppBarProps as MuiAppBarProps} from '@mui/material/AppBar';
@@ -41,6 +42,10 @@ export default function ResponsiveAppBar() {
   const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
+  useEffect(() => {
+    console.log(window.location.pathname);
+    window.location.pathname === '/schranz' ? setValue(1) : setValue(0);
+  }, []);
   return (
     <Box sx={{display: 'flex'}}>
       <CssBaseline />
