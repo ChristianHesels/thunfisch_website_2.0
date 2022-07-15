@@ -10,6 +10,7 @@ export const useTTTTStore = create<MusicStore>((set, get) => ({
     appleMusic:
       'https://music.apple.com/de/artist/total-thunfisch-terror-team/1462613216',
     email: 'info@totalthunfisch.de',
+    shop: 'https://shop.totalthunfisch.de',
   },
   songs: [
     {
@@ -255,6 +256,7 @@ export const useSchranzStore = create<MusicStore>((set, get) => ({
       'https://open.spotify.com/artist/5vjaKwsMvnwiLJjSNxCUmZ?si=w9H2tsxDSfmZecpldc5TnQ',
     appleMusic: 'https://music.apple.com/de/artist/schranz/290568911',
     email: 'info@totalthunfisch.de',
+    shop: 'https://shop.totalthunfisch.de',
   },
   songs: [
     {

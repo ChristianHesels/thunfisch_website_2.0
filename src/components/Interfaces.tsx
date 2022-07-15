@@ -28,6 +28,7 @@ interface Social {
   spotify: string;
   appleMusic: string;
   email: string;
+  shop: string;
 }
 
 interface MusicStore {

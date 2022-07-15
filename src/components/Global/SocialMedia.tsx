@@ -10,7 +10,7 @@ import {
   faItunes,
 } from '@fortawesome/free-brands-svg-icons';
 
-import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import {faEnvelope, faBasketShopping} from '@fortawesome/free-solid-svg-icons';
 
 interface props {
   social: Social;
@@ -35,6 +35,9 @@ export default function SocialFollow({social}: props) {
       </a>
       <a href={mailTo} className="email social" target="_blank">
         <FontAwesomeIcon icon={faEnvelope} size={iconSize} />
+      </a>{' '}
+      <a href={social.shop} className="shop social" target="_blank">
+        <FontAwesomeIcon icon={faBasketShopping} size={iconSize} />
       </a>
     </div>
   );
