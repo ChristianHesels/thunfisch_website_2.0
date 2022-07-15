@@ -24,8 +24,16 @@ interface Album {
   spotify?: string;
   apple?: string;
 }
+interface Social {
+  youtube: string;
+  instagram: string;
+  spotify: string;
+  appleMusic: string;
+  email: string;
+}
 
 interface MusicStore {
+  social: Social;
   albums: Album[];
   songs: Song[];
   getAlbums: () => Album[];
@@ -33,6 +41,15 @@ interface MusicStore {
 }
 
 export const useTTTTStore = create<MusicStore>((set, get) => ({
+  social: {
+    youtube: 'https://www.youtube.com/channel/UCom8vzwUhmIN41-NNmuTe7w',
+    instagram: 'https://instagram.com/totalthunfisch',
+    spotify:
+      'https://open.spotify.com/artist/2IQOcPKKcpm55JT8c6hWlM?si=E91wv3fTS7-1-VA1DQHAZw',
+    appleMusic:
+      'https://music.apple.com/de/artist/total-thunfisch-terror-team/1462613216',
+    email: 'info@totalthunfisch.de',
+  },
   songs: [
     {
       name: 'Cuba Libre',
@@ -276,6 +293,14 @@ export const useTTTTStore = create<MusicStore>((set, get) => ({
 }));
 
 export const useSchranzStore = create<MusicStore>((set, get) => ({
+  social: {
+    youtube: 'https://www.youtube.com/c/drschranz',
+    instagram: 'https://instagram.com/drschrnz',
+    spotify:
+      'https://open.spotify.com/artist/5vjaKwsMvnwiLJjSNxCUmZ?si=w9H2tsxDSfmZecpldc5TnQ',
+    appleMusic: 'https://music.apple.com/de/artist/schranz/290568911',
+    email: 'info@totalthunfisch.de',
+  },
   songs: [
     {
       name: 'außer scheiße',

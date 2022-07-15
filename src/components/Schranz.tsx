@@ -7,12 +7,15 @@ import '../App.css';
 import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import {makeStyles} from '@mui/styles';
+import {useSchranzStore} from '../Store';
 import ich from './Schranz/ich.jpg';
 import ich_mobile from './Schranz/ich_mobile.jpg';
 import useWindowSize from './Hooks/WindowsSize';
+import SocialFollow from './Global/SocialMedia';
 
 export default function Schranz() {
   const size = useWindowSize();
+  const {social} = useSchranzStore();
   let imageUrl = '';
   if (size.width) {
     imageUrl = size.width >= 650 ? ich : ich_mobile;
@@ -48,6 +51,7 @@ export default function Schranz() {
   return (
     <div className="App">
       <Box marginTop="70px" width="100%">
+        <SocialFollow social={social} />
         <Stack spacing={2}>
           <Paper className={classes.b1}>
             <Preview />
