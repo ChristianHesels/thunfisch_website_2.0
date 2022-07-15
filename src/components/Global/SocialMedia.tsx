@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {Social} from '../interfaces';
 
 import {
   faYoutube,
@@ -12,13 +13,7 @@ import {
 import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 
 interface props {
-  social: {
-    youtube: string;
-    instagram: string;
-    email: string;
-    spotify: string;
-    appleMusic: string;
-  };
+  social: Social;
 }
 
 export default function SocialFollow({social}: props) {
