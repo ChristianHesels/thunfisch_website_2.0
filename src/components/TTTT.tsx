@@ -20,7 +20,7 @@ export default function TTTT() {
     imageUrl = size.width >= 650 ? band : bandsmall;
   }
   const {social, songs, albums} = useTTTTStore();
-  const text = 'Unsere Songs kansnt du überall streamen, wo es Musik gibt';
+  const text = 'Unsere Songs kannst du überall streamen, wo es Musik gibt';
   const useStyles = makeStyles({
     b1: {
       backgroundColor: '#a4e7ff',
