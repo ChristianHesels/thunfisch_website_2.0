@@ -34,8 +34,6 @@ interface MusicStore {
   social: Social;
   albums: Album[];
   songs: Song[];
-  getAlbums: () => Album[];
-  getSongs: () => Song[];
 }
 
 export type {PageStatus, Song, Album, Social, MusicStore};

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {Social} from '../interfaces';
+import {Social} from '../Interfaces';
 
 import {
   faYoutube,

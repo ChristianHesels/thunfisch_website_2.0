@@ -8,7 +8,7 @@ import {makeStyles} from '@mui/styles';
 import band from './TTTT/band.jpg';
 import bandsmall from './TTTT/bandsmall.jpg';
 import YouTube from './TTTT/YouTube';
-import Discography from './TTTT/Discography';
+import Discography from './Global/Discography';
 import useWindowSize from './Hooks/WindowsSize';
 import SocialFollow from './Global/SocialMedia';
 import {useTTTTStore} from '../Store';
@@ -19,7 +19,8 @@ export default function TTTT() {
   if (size.width) {
     imageUrl = size.width >= 650 ? band : bandsmall;
   }
-  const {social} = useTTTTStore();
+  const {social, songs, albums} = useTTTTStore();
+  const text = 'Unsere Songs kansnt du überall streamen, wo es Musik gibt';
   const useStyles = makeStyles({
     b1: {
       backgroundColor: '#a4e7ff',
@@ -60,7 +61,7 @@ export default function TTTT() {
             <YouTube />
           </Paper>
           <Paper className={classes.b3}>
-            <Discography />
+            <Discography songs={songs} albums={albums} text={text} />
           </Paper>
         </Stack>
       </Box>

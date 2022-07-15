@@ -1,7 +1,7 @@
 import React from 'react';
 import Preview from './Schranz/Preview';
 import Teaser from './Schranz/Teaser';
-import Discography from './Schranz/Discography';
+import Discography from './Global/Discography';
 import Box from '@mui/material/Box';
 import '../App.css';
 import Paper from '@mui/material/Paper';
@@ -15,7 +15,8 @@ import SocialFollow from './Global/SocialMedia';
 
 export default function Schranz() {
   const size = useWindowSize();
-  const {social} = useSchranzStore();
+  const {social, songs, albums} = useSchranzStore();
+  const text = 'Meine gesamte Musik findest du überall, wo es Musik gibt';
   let imageUrl = '';
   if (size.width) {
     imageUrl = size.width >= 650 ? ich : ich_mobile;
@@ -60,7 +61,7 @@ export default function Schranz() {
             <Teaser />
           </Paper>
           <Paper className={classes.b3}>
-            <Discography />
+            <Discography songs={songs} albums={albums} text={text} />
           </Paper>
         </Stack>
       </Box>
