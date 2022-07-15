@@ -1,5 +1,5 @@
 import create from 'zustand';
-import {PageStatus, MusicStore} from './components/interfaces';
+import {PageStatus, MusicStore} from './components/Interfaces';
 
 export const useTTTTStore = create<MusicStore>((set, get) => ({
   social: {
@@ -245,12 +245,6 @@ export const useTTTTStore = create<MusicStore>((set, get) => ({
       apple: 'https://music.apple.com/de/album/bierpferd/1504565678',
     },
   ],
-  getAlbums: () => {
-    return get().albums;
-  },
-  getSongs: () => {
-    return get().songs;
-  },
 }));
 
 export const useSchranzStore = create<MusicStore>((set, get) => ({
@@ -318,12 +312,6 @@ export const useSchranzStore = create<MusicStore>((set, get) => ({
       apple: 'https://music.apple.com/de/album/oder-gar-nicht-ep/1621847445',
     },
   ],
-  getAlbums: () => {
-    return get().albums;
-  },
-  getSongs: () => {
-    return get().songs;
-  },
 }));
 
 export const usePageStore = create<PageStatus>(set => ({
