@@ -10,6 +10,8 @@ interface props {
 }
 
 export default function Discography({songs, albums, text}: props) {
+  songs = [...songs].reverse();
+  albums = [...albums].reverse();
   return (
     <div>
       <h1>Diskographie</h1>

@@ -258,21 +258,12 @@ export const useSchranzStore = create<MusicStore>((set, get) => ({
   },
   songs: [
     {
-      name: 'außer scheiße',
-      img: '300x300 as',
+      name: 'stereosaufen',
+      img: '300x300 stereosaufen',
       spotify:
-        'https://open.spotify.com/track/1obDkTTSrX68Qb0xAiakwm?si=e3efb6010a3847bd',
+        'https://open.spotify.com/track/3Zlsa2fPNIezVIyGxJQT00?si=6b5d9e31a530457d',
       apple:
-        'https://music.apple.com/de/album/au%C3%9Fer-schei%C3%9Fe-feat-diepk-jan-eurysma-single/1628383745',
-      wasSingle: true,
-    },
-    {
-      name: 'clubschlange',
-      img: '300x300 clubschlange',
-      spotify:
-        'https://open.spotify.com/track/50TxwMhKA7qSldNdtlYdjA?si=e4cc9d7434024a7e',
-      apple:
-        'https://music.apple.com/de/album/clubschlange-feat-diepk/1621956814?i=1621956815',
+        'https://music.apple.com/us/album/stereosaufen-feat-das-m-single/1613191245',
       wasSingle: true,
     },
     {
@@ -285,12 +276,21 @@ export const useSchranzStore = create<MusicStore>((set, get) => ({
       wasSingle: true,
     },
     {
-      name: 'stereosaufen',
-      img: '300x300 stereosaufen',
+      name: 'clubschlange',
+      img: '300x300 clubschlange',
       spotify:
-        'https://open.spotify.com/track/3Zlsa2fPNIezVIyGxJQT00?si=6b5d9e31a530457d',
+        'https://open.spotify.com/track/50TxwMhKA7qSldNdtlYdjA?si=e4cc9d7434024a7e',
       apple:
-        'https://music.apple.com/us/album/stereosaufen-feat-das-m-single/1613191245',
+        'https://music.apple.com/de/album/clubschlange-feat-diepk/1621956814?i=1621956815',
+      wasSingle: true,
+    },
+    {
+      name: 'außer scheiße',
+      img: '300x300 as',
+      spotify:
+        'https://open.spotify.com/track/1obDkTTSrX68Qb0xAiakwm?si=e3efb6010a3847bd',
+      apple:
+        'https://music.apple.com/de/album/au%C3%9Fer-schei%C3%9Fe-feat-diepk-jan-eurysma-single/1628383745',
       wasSingle: true,
     },
   ],
